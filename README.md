@@ -17,28 +17,8 @@ unzip snell-server-v4.0.0-linux-amd64.zip -d /usr/local/bin
 # 生成配置文件
 snell-server --wizard -c /etc/snell-server.conf
 
-# 创建启动文件
-nano /etc/systemd/system/snell.service
+# 下载启动文件
 
-# 复制粘贴以下内容
-
-[Unit]
-Description=Snell Proxy Service
-After=network.target
-
-[Service]
-Type=simple
-User=nobody
-Group=nogroup
-LimitNOFILE=32768
-ExecStart=/usr/local/bin/snell-server -c /etc/snell-server.conf
-StandardOutput=syslog
-StandardError=syslog
-SyslogIdentifier=snell-server
-AmbientCapabilities=CAP_NET_BIND_SERVICE
-
-[Install]
-WantedBy=multi-user.target
 
 # 管理命令
 
