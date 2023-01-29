@@ -2,6 +2,10 @@
 
 apt update && apt install wget unzip curl socat -y
 
+# 二进制文件下载界面
+
+https://manual.nssurge.com/others/snell.html
+
 # ARM
 wget https://dl.nssurge.com/snell/snell-server-v4.0.0-linux-aarch64.zip
 
