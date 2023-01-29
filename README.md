@@ -18,7 +18,7 @@ unzip snell-server-v4.0.0-linux-amd64.zip -d /usr/local/bin
 snell-server --wizard -c /etc/snell-server.conf
 
 # 下载启动文件
-
+curl -Lo /etc/systemd/system/snell.service https://raw.githubusercontent.com/fqnpc/snell-install/main/snell.service
 
 # 管理命令
 
