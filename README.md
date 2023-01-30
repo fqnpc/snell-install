@@ -4,7 +4,7 @@
 
 #### 二进制文件下载界面
 
-> https://manual.nssurge.com/others/snell.html
+> (https://manual.nssurge.com/others/snell.html)
 
 #### ARM
 
