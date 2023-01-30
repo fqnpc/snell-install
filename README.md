@@ -22,13 +22,13 @@ wget https://dl.nssurge.com/snell/snell-server-v4.0.0-linux-amd64.zip
 
 unzip snell-server-v4.0.0-linux-amd64.zip -d /usr/local/bin
 
-# 生成配置文件
-
-snell-server --wizard -c /etc/snell-server.conf
-
 # 下载启动文件
 
 curl -Lo /etc/systemd/system/snell.service https://raw.githubusercontent.com/fqnpc/snell-install/main/snell.service
+
+# 生成配置文件
+
+snell-server --wizard -c /etc/snell-server.conf
 
 # 管理命令
 
