@@ -1,4 +1,4 @@
-<sup>snell-install</sup>
+> snell-install
 
 apt update && apt install wget unzip curl socat -y
 
